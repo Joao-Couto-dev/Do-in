@@ -1,0 +1,227 @@
+#pomodoro-page{
+    display: flex;
+
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.pomodoro-area{
+    display: flex;
+    flex-direction: row;
+}
+
+.pomodoro-config{
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-left: 5vw;
+}
+
+.select-task{
+    font-family: Roboto, sans-serif; 
+    font-weight: 500;
+    font-size: 25px;
+
+    color: var(--font-color);
+
+    background-color: transparent;
+
+    border: 3px solid;
+    border-color: var(--primary-hover);
+    border-radius: 8px;
+
+    margin: 15vh 0;
+
+    outline: none;
+}
+
+.select-task option{
+    background-color: var(--bg-color);
+}
+
+.timer-config,
+.timer-options{
+    width: 300px;
+}
+
+.timer-config{
+    display: flex;
+    flex-direction: column;
+}
+
+.timer-options{
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer-counter button{
+    background-color: transparent;
+
+    border: none;
+
+    font-size: 15px;
+
+    margin: 0 10px;
+
+    outline: none;
+}
+
+.work-title{
+    text-align: center;
+
+    font-size: 20px;
+}
+
+.work-time{
+    font-size: 25px;
+}
+
+.start-button, .stop{
+    background-color: var(--primary-color);
+
+    border: none;
+    border-radius: 8px;
+
+    text-decoration: none;
+    text-align: center;
+
+    color: var(--font-color);
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 12px 120px;
+
+    margin-top: 15vh;
+
+    cursor: pointer;
+
+    outline: none;
+}
+
+.start-button:hover, .stop:hover{
+    background-color: var(--primary-hover);
+    transition: 400ms;
+}
+
+.pomodoro-clock{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 8vw;
+
+    transition: 400ms;
+}
+
+.clock{
+    width: 500px;
+    height: 500px;
+
+    border: 25px solid;
+    border-color: var(--primary-color);
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-time{
+    font-size: 40px;
+}
+
+.invisible{
+    display: none;
+}
+
+.invisible-animation{
+    animation: disapper 1s;
+}
+
+.less-width{
+    animation: lessWidth 1s;
+}
+
+@keyframes disapper{
+    from{ 
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes lessWidth{
+    from{
+        width: 300px;
+        opacity: 0;
+    }
+    to{
+        width: 0px;
+        opacity: 0;
+    }
+}
+
+.timer-controls{
+    height: 100%;
+    width: 50vw;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.task{
+    font-size: 45px;
+}
+
+.modal .alert-text,
+.buttons-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-area{
+    height: 80%;
+}
+
+.alert-text .svg{
+    margin-right: 10px;
+}
+
+.modal .confirm-button{
+    border: 1px solid var(--primary-color);
+
+    background-color: var(--primary-color);
+
+    font-family: Roboto, sans-serif;  
+    font-size: 20px;
+    color: white;
+
+    border-radius: 8px;
+    padding: 5px 10px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+.visible{
+    display: flex;
+}

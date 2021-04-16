@@ -1,0 +1,169 @@
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.create-card-title{
+    display: flex;
+    align-items: center;
+
+    width: 90%;
+
+    margin-top: 30px;
+}
+
+.create-card-title svg{
+    float: left;
+
+    cursor: pointer;
+}
+
+.form-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50vw;
+    height: 100%;
+
+    background-color: var(--tertiary-color);
+
+    border-radius: 12px;
+}
+
+.form-card h1{
+    margin: auto;
+}
+
+.create-card{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 80%;
+}
+
+.label-card{
+    text-align: left;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    align-self: start;
+
+    margin: 15px 0;
+}
+
+.input-card:not(textarea){
+    height: 30px;
+    width: 90%;
+
+    background-color: var(--bg-color);
+
+    border-radius: 8px;
+
+    border: transparent;
+
+    font: Roboto, sans-serif;
+    font-size: 20px;
+    color: var(--font-color);
+}
+
+.input-card:focus{
+    border: 2px solid var(--primary-color);
+
+    outline: none;
+}
+
+textarea{
+    height: 200px;
+    width: 90%;
+
+    background-color: var(--bg-color);
+
+    border-radius: 8px;
+
+    border: transparent;
+
+    font: Roboto, sans-serif;
+    font-size: 20px;
+    color: var(--font-color);
+    resize: none;
+}
+
+.create-button{
+    background-color: var(--primary-color);
+
+    border: none;
+    border-radius: 8px;
+
+    text-decoration: none;
+    text-align: center;
+
+    color: var(--font-color);
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 12px 35%;
+
+    margin: 20px auto;
+
+    cursor: pointer;
+
+    outline: none;  
+}
+
+.create-button:hover{
+    background-color: var(--primary-hover); 
+    transition: 400ms;
+}
+
+.form-card .add-file{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-card input[type="file"]{
+    display: none;
+}
+
+.form-card .file-select{
+    background-color: var(--primary-color);
+
+    padding: 10px 15px;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.delete-file-button{
+    cursor: pointer;
+
+    margin: 0 5px;
+}
+
+.files{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.file{
+    display: flex;
+
+    align-items: center;
+
+    background-color: var(--secondary-color);
+
+    padding: 10px;
+
+    margin: 10px 5px;
+
+    border-radius: 8px;
+}
+
+.file h5{
+    margin-left: 8px;
+}

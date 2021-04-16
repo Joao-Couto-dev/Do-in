@@ -1,0 +1,40 @@
+.sidebar-contents{
+    width: 8vw;
+}
+
+.sidebar{
+    width: 8vw;
+    height: 100vh;
+    margin-right: 8vw;
+
+    min-width: 78px;
+    max-width: 109px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+
+    background-color: var(--secondary-color);
+
+    border-radius: 0 8px 8px 0;
+}
+
+.sidebar-logo{
+    margin: 0 auto;
+}
+
+.options-icons{
+    height: 80vh;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar svg{
+    margin: 4vh auto;
+}
