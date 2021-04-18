@@ -1,0 +1,151 @@
+#Login-page{
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.form-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+
+    margin-top: 10px;
+}
+
+.logo-login .logo-text{
+    color: white;
+}
+
+.logo-text{
+    font-size: clamp(44px, 8vw, 62px);
+}
+
+.logo-login span{
+    margin-right: 8px;
+}
+
+.logo-login span{
+    color: var(--primary-color);
+}
+
+.form-title{
+    font-size: clamp(40px, 5.3vw, 55px);    
+}
+
+.form{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+
+    margin: auto;
+}
+
+.autentic-form{
+    background-color: var(--tertiary-color);
+
+    width: 441px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    padding: 50px 0px;
+}
+
+.input{
+    position: relative;
+    margin: 12px 0;
+}
+
+.input svg{
+    position: absolute;
+    top: 25%;
+    transform: rotateY(-50%);
+    left: 10px;
+}
+
+.input:focus-within svg{
+    fill: var(--primary-color);
+}
+
+.input:focus-within{
+    border: 3px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.input input{
+    width: 308px;
+    height: 60px;
+
+    color: white;
+
+    font-size: 15px;
+
+    background-color: var(--bg-color);
+    padding: 17px 43px;
+
+    outline: none;
+
+    border: 2px solid var(--bg-color);
+    border-radius: 8px;
+}
+
+.input input::placeholder{
+    color: white;
+}
+
+.button{
+
+    background-color: var(--primary-color);
+
+    border: none;
+    border-radius: 8px;
+
+    text-decoration: none;
+    text-align: center;
+
+    color: var(--font-color);
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 12px 120px;
+
+    margin-bottom: 20px;
+
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--primary-hover);
+    transition: 400ms;
+}
+
+form .link{
+    font-weight: lighter;
+
+    margin: 20px 0 30px 0;
+}
+
+form .link a{
+    text-decoration: none;
+
+    color: var(--primary-color);
+
+    margin-left: 5px;
+}

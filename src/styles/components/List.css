@@ -1,0 +1,58 @@
+.list{
+    width: 260px;
+    height: 100%;
+
+    margin: 0 40px;
+
+    background-color: var(--bg-color);
+    
+}
+
+.list-header{
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.list .title{
+    font-size: 28px;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;    
+    color: var(--font-color);
+}
+
+.drag-lists{
+    margin-left: 5px;
+
+    cursor: grab;
+
+    filter: invert(100%);
+}
+
+.addCard{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+
+    height: 45px;
+
+    padding: 0 10px;
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    background-color: var(--primary-color);
+    outline: none;
+    text-decoration: none;
+}
+
+.addCard:hover{
+    background-color: var(--primary-hover);
+    transition: 400ms;
+}

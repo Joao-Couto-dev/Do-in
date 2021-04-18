@@ -1,0 +1,9 @@
+.grafic-page{
+    width: 100vw;
+    height: 100vh;
+}
+
+.grafic-page .grafic-area{
+    height: 100%;
+    width: 100%;
+}

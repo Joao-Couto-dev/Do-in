@@ -1,0 +1,102 @@
+.informationsBar{
+    height: 100%;
+    width: 367px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--secondary-hover);
+
+    overflow-y: scroll;
+
+    cursor: auto;
+
+    z-index: 10;
+
+}
+
+.informationsBar svg{
+    cursor: pointer;
+}
+
+.task-name{
+    text-align: center;
+
+    font-size: 30px;
+}
+
+.outputs{
+    margin-left: 15px;
+}
+
+.output-date, .output-description,
+.output-files{
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px 0;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    
+    width: 150px;
+
+    margin-top: 10px;
+
+    padding: 5px;
+
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+}
+
+.date h4{
+    font-size: 18px;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 8px;
+
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+}
+
+.description h4{
+    font-weight: 500;
+}
+
+.delete-task-button{
+    background-color: var(--primary-color);
+    color: var(--font-color);
+
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+
+    width: 150px;
+
+    padding: 5px;
+
+    border: none;
+    border-radius: 8px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+.delete-task-button:hover{
+    background-color: var(--primary-hover);
+    transition: 400ms;
+}

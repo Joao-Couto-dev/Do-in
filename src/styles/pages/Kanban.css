@@ -1,0 +1,180 @@
+#Kanban-page{
+    display: flex;
+
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal-contents{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    z-index: 20;
+
+    visibility: hidden;
+}
+
+.modal-active{
+    visibility: visible;
+}
+
+.modal{
+    background-color: var(--bg-color);
+
+    width: 40%;
+    height: 30%;
+
+    border-radius: 8px;
+}
+
+.modal .create-list-title{
+    font-size: 30px;
+
+    margin: 10px;
+}
+
+.modal .create-list-input{
+    font-size: 20px;
+
+    width: 90%;
+
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+    background-color: transparent;
+    color: var(--font-color);
+
+    border: 3px solid gray;
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.modal .create-list-input:focus-within{
+    border: 3px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.modal .cancel-button,
+.modal .create-list-button{
+    color: var(--font-color);
+    outline: none;
+
+    border: none;
+    border-radius: 8px;
+
+    margin-left: 10px;
+    margin-top: 20px;
+
+    font-size: 17px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+
+    padding: 7px;
+
+    cursor: pointer;
+}
+
+.modal .cancel-button{
+    background-color: #3E3835;
+}
+
+.modal .create-list-button{
+    background-color: var(--primary-color);
+}
+
+.modal .create-list-button:hover{
+    background-color: var(--primary-hover);
+    transition: 400ms;
+}
+
+.kanban-area{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title{
+    display: flex;
+
+    margin: 5px auto 20px 15px ;
+}
+
+.project-title .title{
+    margin-left: 10px;
+}
+
+.title-key,
+.title{
+    font-size: 40px;
+    color: var(--font-color);
+}
+
+.title{
+    font-family: Roboto, sans-serif;
+}
+
+.kanban{
+    display: flex;
+    
+    height: 100%;
+}
+
+.add-list{
+    position: fixed;
+    top: 90vh;
+    right: 15px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-button{
+    font-size: 15px;
+
+    visibility: hidden;
+    display: none;
+
+    transition: 400ms;
+}
+
+.visible{
+    visibility: visible;
+    display: flex;
+}
+
+.create-list{
+    display: flex;
+    align-items: center;
+
+    background-color: var(--primary-color);
+
+    padding: 10px;
+    
+    border: none;
+    border-radius: 12px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+.create-list:hover{
+    background-color: var(--primary-hover);
+    transition: 400ms;
+}
+
+.list-button{
+    margin-left: 5px;
+}
